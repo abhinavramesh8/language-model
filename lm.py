@@ -6,14 +6,10 @@ import time
 from models import *
 from utils import *
 
-####################################################
-# DO NOT MODIFY THIS FILE IN YOUR FINAL SUBMISSION #
-####################################################
-
 
 def _parse_args():
     """
-    Command-line arguments to the system. --model switches between the main modes you'll need to use. The other arguments
+    Command-line arguments to the system. --model switches between the main modes we'll need to use. The other arguments
     are provided for convenience.
     :return: the parsed args bundle
     """
@@ -41,7 +37,7 @@ def read_text(file):
 def run_sanity_check(lm, vocab_index):
     """
     Runs two sanity checks: (1) The language model must return valid probabilities for a few contexts. This checks that
-    your model can take sequences of different lengths and contexts of different lengths without crashing.
+    the model can take sequences of different lengths and contexts of different lengths without crashing.
     (2) Your reported next character distribution must agree with get_log_prob_sequence
     :param lm: the trained LM
     :return: True if the output is sane, false otherwise
