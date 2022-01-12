@@ -6,10 +6,6 @@ import time
 from models import *
 from utils import *
 
-####################################################
-# DO NOT MODIFY THIS FILE IN YOUR FINAL SUBMISSION #
-####################################################
-
 
 def _parse_args():
     """
